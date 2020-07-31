@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Entertainment Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/adminSortFile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"> 
+   </script> 
+</head>
+<body>
+    <header class="border-b  p-6 text-center bg-gray-100 flex justify-between item-center">
+        <div class="block">
+            <span class="font-bold text-2xl">Entertainment Application By Sumit Borse</span>
+        </div>
+        <div class="block logout">
+            <a class=" glyphicon glyphicon-log-out btn btn-sm float-right text-2xl" href="/userLogin">
+                <span>Logout</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="col-3 col-s-3 menu ">
+           <ul>
+                <li><a class="block glyphicon glyphicon-upload text-center" href="/adminDashboard"> Home</a></li>
+                <li><a class="block glyphicon glyphicon-upload text-center" href="/adminUploadFile"> Upload</a></li>
+                <li><a class="block glyphicon glyphicon-trash text-center" href="#"> Delete</a></li>
+                <li><a class="block glyphicon glyphicon-filter text-center" href="/adminSortFile"> Filter</a></li>
+                <li class="logout-1">
+                    <a class="block glyphicon glyphicon-log-out text-center " href="/adminLogin">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-3 col-s-9">
+            <form method="post" action="/upload">
+                <div class="justify-between">
+                    <select class="select-auto py-3 sec" id="media" name="path">
+                        <option value="">Sort By</option>
+                        <option value="../media/music">Music</option>
+                        <option value="../media/movies">Movies</option>
+                        <option value="../media/audioBook">Audio Book</option>
+                        <option value="../media/podcast">Podcast</option>
+                    </select>
+                    <input type="Submit" value="Sort" class="sub bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="font-bold absolute bottom-0 bg-gray-300 text-center  p-3 w-full">
+        &copy; Sumit Borse 2020
+    </footer>
+</body>
+</html>
+

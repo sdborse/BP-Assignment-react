@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Entertainment Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/tailwind.css">
+    <link rel="stylesheet" href="../css/userLogin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <header class="border-b  p-6 text-center bg-gray-100 flex justify-between item-center">
+        <span class="font-bold">Entertainment Application By Sumit Borse</span>
+    </header>
+    <div class="container">
+
+        <div class="form-div">
+            <div class="inner-container">
+                <div class="form-group bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <form id="form" method="post" action="/adminLogin" >
+                        <h1 class="text-5xl text-center font-semibold ">Admin Login</h1>
+                        <div class="mb-4">
+                            <label class="form-label block text-gray-700 text-sm font-bold mb-2" for="username">
+                            Username
+                            </label>
+                            <input type="text" name="username" placeholder="User Name" required="" class="form-label shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="form-label block text-gray-700 text-sm font-bold mb-2" for="password">
+                            <strong>Password</strong>
+                            </label>
+                            <input type="password" name="password" placeholder="Password" required="" class="form-label shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                            <a href="/forgetPassword">Do you forgot password?</a>
+                        </div>                   
+                    </form>
+                </div>
+                <div class="mssg bg-danger">
+                <span id="check" ></span>
+                </div>
+                <div id="LangTable"><a href="/profile" id="aa"></a>
+                </div>
+                <div><span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="font-bold absolute bottom-0 bg-gray-300 text-center  p-3 w-full">
+        &copy; Sumit Borse 2020
+    </footer>
+</body>
+</html>
+

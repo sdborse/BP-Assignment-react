@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Entertainment Application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/adminDashboard.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="border-b  p-6 text-center bg-gray-100 flex justify-between item-center">
+        <div class="block">
+            <span class="font-bold text-2xl">Entertainment Application By Sumit Borse</span>
+        </div>
+        <div class="block logout">
+            <a class=" glyphicon glyphicon-log-out btn btn-sm float-right text-2xl" href="/adminLogin">
+                <span>Logout</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="col-3 col-s-3 menu ">
+            <ul>
+                <li><a class="block glyphicon glyphicon-home text-center" href="/adminDashboard"> Home</a></li>
+                <li><a class="block glyphicon glyphicon-upload text-center" href="/adminUploadFile"> Upload</a></li>
+                <li><a class="block glyphicon glyphicon-trash text-center" href="#"> Delete</a></li>
+                <li><a class="block glyphicon glyphicon-filter text-center" href="/adminSortFile"> Filter</a></li>
+                <li class="logout-1">
+                    <a class="block glyphicon glyphicon-log-out text-center " href="/adminLogin">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-3 col-s-9">
+            <div class="w-full bg-gray-100 mb-10">
+               <input type="search" class="bg-purple-white shadow rounded border-0 p-3 w-full" placeholder="Search by name...">
+            </div>
+            <source src="../media/music/Bodyguard.mp3" type="audio/mpeg" alt="music">
+        </div>
+        
+    </div>
+    
+    <footer class="font-bold absolute bottom-0 bg-gray-300 text-center  p-3 w-full">
+        &copy; Sumit Borse 2020
+    </footer>
+</body>
+</html>
+
